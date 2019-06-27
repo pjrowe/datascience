@@ -2,7 +2,9 @@
 title: "Visiting São Paulo for My American Friends"
 author: "PR"
 date: "6/23/2019"
-output: ioslides_presentation
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -13,9 +15,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-## Map 
+## Map of São Paulo
 
-```{r map, echo=FALSE, fig.height=4, fig.width=6, message=TRUE, warning=FALSE, comment="", paged.print=FALSE}
+```{r map, echo=FALSE, fig.height=5, fig.width=7, message=FALSE, warning=FALSE, comment=""}
 library(leaflet)
 set.seed(2019-06-26)
 #myIcon <- makeIcon(
@@ -46,7 +48,7 @@ my_Sao_Paulo_LatLong %>%
     addRectangles(lat1=-23.54,lng1=-46.69,
                   lat2=-23.62,lng2=-46.64,color=c('gray'))
 
-my_Sao_Paulo_LatLong
+#my_Sao_Paulo_LatLong
 
 
 ```
@@ -56,7 +58,7 @@ my_Sao_Paulo_LatLong
 
 For a short visit, I recommend staying within or close to the area shown in gray rectangle
 
-- except for upper right corner, which is near *Centro*, this area is generally **safe**
+- except for upper right corner, which is near to some sketchy areas of *Centro*, this area is generally **safe** even at night
 
 The map on previous page shows some points of interest:
 
@@ -67,7 +69,5 @@ The map on previous page shows some points of interest:
 5. **O'Malley's** - Irish pub popular among tourists and locals 
 6. **Ibirapeura Park** - great for walking, biking, etc.
 
-
-
-
+ 
 
