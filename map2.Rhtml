@@ -1,21 +1,17 @@
----
-title: "Visiting São Paulo for My American Friends"
-author: "PR"
-date: "6/23/2019"
-output: ioslides_presentation
----
+<html>
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(
-	echo = FALSE,
-	message = FALSE,
-	warning = FALSE
-)
-```
+<head>
+<title>Visiting São Paulo</title>
+</head>
 
-## Map 
+<body>
 
-```{r map, echo=FALSE, fig.height=4, fig.width=6, message=TRUE, warning=FALSE, comment="", paged.print=FALSE}
+<p>June 27, 2019 - For first time visitors on a short trip, here is a map with some suggested points of interest.</p>
+
+<p>You can also embed plots, for example:</p>
+
+<!--begin.rcode fig.width=7, fig.height=6
+
 library(leaflet)
 set.seed(2019-06-26)
 #myIcon <- makeIcon(
@@ -46,28 +42,11 @@ my_Sao_Paulo_LatLong %>%
     addRectangles(lat1=-23.54,lng1=-46.69,
                   lat2=-23.62,lng2=-46.64,color=c('gray'))
 
-my_Sao_Paulo_LatLong
-
-
-```
-
-
-## Points of Interest Inside City
-
-For a short visit, I recommend staying within or close to the area shown in gray rectangle
-
-- except for upper right corner, which is near *Centro*, this area is generally **safe**
-
-The map on previous page shows some points of interest:
-
-1. **Transamerica Flat** - place to stay in walkable neighborhood
-2. **JK Shopping** - new high-end mall 
-3. **Fogo do Chão** - Brazilian Steakhouse
-4. **Museum of Art** - located on Paulista Avenue, one of the city's major cultural centers
-5. **O'Malley's** - Irish pub popular among tourists and locals 
-6. **Ibirapeura Park** - great for walking, biking, etc.
+#my_Sao_Paulo_LatLong
 
 
 
+end.rcode-->
 
-
+</body>
+</html>
